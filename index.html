@@ -1,90 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Samuel Kwesi Opoku | Portfolio</title>
+<title>Samuel Kwesi Opoku Portfolio</title>
 
 <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 
 </head>
 
 <body>
 
-<header>
+<header class="hero">
 
-<div class="nav">
+<img src="logo.png" class="logo">
 
-<div class="logo">
-<img src="logo.png">
-<span>Forward Alliance</span>
-</div>
+<img src="samuel.png" class="profile">
 
-<ul>
+<h1>Samuel Kwesi Opoku</h1>
 
-<li><a href="#about">About</a></li>
-<li><a href="#portfolio">Portfolio</a></li>
-<li><a href="#contact">Contact</a></li>
+<p>Broadcast Journalist | Data Scientist | Web Developer</p>
 
-</ul>
-
-</div>
+<a href="cv.pdf" class="btn" download>Download CV</a>
 
 </header>
 
 
+<section id="leadership">
 
-<section class="hero">
-
-<img src="samuel.jpg" class="profile-pic">
-
-<h1>SAMUEL KWESI OPOKU</h1>
-
-<h3>Broadcast Journalist | Data Scientist | Web Developer</h3>
-
-</section>
-
-
-
-<section id="about" class="section">
-
-<h2>About Me</h2>
-
-<p>
-
-A multidisciplinary professional working at the intersection of media and technology, specializing in broadcast journalism, data science, and web development.
-
-As a proud member of the ALX Community and the founder of Forward Alliance, I am dedicated to using storytelling, data, and digital tools to drive impact, foster collaboration, and support community development.
-
-</p>
-
-</section>
-
-
-
-<section id="portfolio" class="section">
-
-<h2>Portfolio & Achievements</h2>
-
-<div class="cards">
+<h2>Leadership Portfolio</h2>
 
 <div class="card">
-<h3>Best Brain Winner</h3>
-<p>Recognized for academic excellence.</p>
+<h3>Former SRC Vice President Aspirant – University of Media, Arts and Communication (UniMAC)</h3>
+<p>Advocated for student empowerment, transparency and innovation.</p>
 </div>
 
 <div class="card">
 <h3>Head Boy Prefect</h3>
-<p>Leadership role during senior high school.</p>
+<p>Led the student body and represented student interests.</p>
 </div>
 
 <div class="card">
-<h3>SRC Vice President Aspirant</h3>
-<p>University of Media Arts and Communication (UniMac).</p>
+<h3>Best Brain Winner – Junior High School</h3>
+<p>Recognized for academic excellence.</p>
+</div>
+
+</section>
+
+
+<section id="skills">
+
+<h2>Data Science Dashboard</h2>
+
+<canvas id="skillChart"></canvas>
+
+</section>
+
+
+<section id="projects">
+
+<h2>GitHub Projects</h2>
+
+<div id="repos"></div>
+
+</section>
+
+
+<section id="timeline">
+
+<h2>My Journey</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<h3>Junior High School</h3>
+<p>Best Brain Award</p>
+</div>
+
+<div class="timeline-item">
+<h3>Senior High School</h3>
+<p>Head Boy Prefect</p>
+</div>
+
+<div class="timeline-item">
+<h3>University of Media Arts and Communication</h3>
+<p>Broadcast Journalism</p>
 </div>
 
 </div>
@@ -92,24 +101,33 @@ As a proud member of the ALX Community and the founder of Forward Alliance, I am
 </section>
 
 
+<section id="globe">
 
-<section id="contact" class="section">
+<h2>Global Vision</h2>
+
+<div id="globeContainer"></div>
+
+</section>
+
+
+<section id="contact">
 
 <h2>Contact</h2>
 
-<p>Instagram: OPOKU SAMUEL KWESI</p>
-<p>Twitter/X: Samuel Kwesi Opoku</p>
-<p>LinkedIn: Samuel Kwesi Opoku</p>
+<p>Email: babj28095@student.unimac.edu.gh</p>
+<p>Location: Accra, Ghana</p>
 
 </section>
 
 
+<script src="script.js"></script>
 
-<footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-<p>© 2026 Samuel Kwesi Opoku | Forward Alliance</p>
-
-</footer>
+<script>
+AOS.init();
+</script>
 
 </body>
+
 </html>
